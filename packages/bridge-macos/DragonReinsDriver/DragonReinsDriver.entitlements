@@ -4,12 +4,14 @@
 <dict>
     <key>com.apple.developer.driverkit</key>
     <true/>
-    <key>com.apple.developer.driverkit.transport.usb</key>
-    <array>
+	<key>com.apple.developer.driverkit.transport.usb</key>
+	<array>
         <dict>
             <key>idVendor</key>
             <integer>9610</integer>
         </dict>
     </array>
+    <key>com.apple.developer.driverkit.allow-any-userclient-access</key>
+    <true/>
 </dict>
 </plist>
