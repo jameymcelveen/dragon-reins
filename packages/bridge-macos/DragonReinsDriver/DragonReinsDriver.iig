@@ -14,8 +14,10 @@
 class DragonReinsDriver: public IOService
 {
 public:
-    virtual kern_return_t
-    Start(IOService * provider) override;
+    virtual bool init(void) override;
+    virtual kern_return_t Start(IOService* provider) override;
+    virtual kern_return_t Stop(IOService* provider) override;
+    virtual void free(void) override;
 };
 
 #endif /* DragonReinsDriver_h */
