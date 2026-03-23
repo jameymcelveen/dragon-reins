@@ -1,0 +1,21 @@
+//
+//  DragonReinsDriver.iig
+//  DragonReinsDriver
+//
+//  Created by Jamey McElveen on 3/20/26.
+//
+
+#ifndef DragonReinsDriver_h
+#define DragonReinsDriver_h
+
+#include <Availability.h>
+#include <DriverKit/IOService.iig>
+
+class DragonReinsDriver: public IOService
+{
+public:
+    virtual kern_return_t
+    Start(IOService * provider) override;
+};
+
+#endif /* DragonReinsDriver_h */
